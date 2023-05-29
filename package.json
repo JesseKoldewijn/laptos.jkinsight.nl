@@ -1,0 +1,17 @@
+{
+	"name": "leptos_jkinsight_nl",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "trunk serve --open",
+		"compile-css": "tailwindcss -c ./tailwind.config.cjs -o ./src/styles/globals.css --minify --watch",
+		"build": "tailwindcss -c ./tailwind.config.cjs -o ./src/styles/globals.css --minify && trunk build"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.3.2"
+	}
+}
