@@ -1,17 +1,23 @@
 {
-	"name": "leptos_jkinsight_nl",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"dev": "trunk serve --open",
-		"compile-css": "tailwindcss ./src/styles/globals-inject.css -c ./tailwind.config.cjs -o ./src/styles/globals.css --minify --watch",
-		"build": "tailwindcss -c ./tailwind.config.cjs -o ./src/styles/globals.css --minify && trunk build"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"tailwindcss": "^3.3.2"
-	}
+    "name": "leptos_jkinsight_nl",
+    "version": "1.0.0",
+    "description": "A blazingly fast Leptos website (using rust, trunk, tailwindcss and laptos)",
+    "private": true,
+    "scripts": {
+        "dev": "trunk serve --open",
+        "compile-css": "tailwindcss ./src/styles/globals-inject.css -c ./tailwind.config.cjs -o ./src/styles/globals.css --minify --watch",
+        "build": "tailwindcss -c ./tailwind.config.cjs -o ./src/styles/globals.css --minify && trunk build"
+    },
+    "keywords": [
+        "rust",
+        "laptos",
+        "tailwindcss"
+    ],
+    "author": "JesseKoldewijn",
+    "license": "UNLICENCED",
+    "devDependencies": {
+        "prettier": "^2.8.8",
+        "prettier-plugin-rust": "^0.1.9",
+        "tailwindcss": "^3.3.2"
+    }
 }
