@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "trunk serve --open",
-		"compile-css": "tailwindcss -c ./tailwind.config.cjs -o ./src/styles/globals.css --minify --watch",
+		"compile-css": "tailwindcss ./src/styles/globals-inject.css -c ./tailwind.config.cjs -o ./src/styles/globals.css --minify --watch",
 		"build": "tailwindcss -c ./tailwind.config.cjs -o ./src/styles/globals.css --minify && trunk build"
 	},
 	"keywords": [],

@@ -2,6 +2,7 @@ use leptos::*;
 use leptos_router::*;
 
 mod pages;
+use crate::pages::about::About;
 use crate::pages::home::Home;
 use crate::pages::notfound::NotFound;
 
@@ -9,12 +10,13 @@ use crate::pages::notfound::NotFound;
 pub fn App(cx: Scope) -> impl IntoView {
     view! { cx,
         <Router>
-        <main>
-            <Routes>
-                <Route path="/" view=|cx| view! { cx, <Home/> }/>
-                <Route path="/*any" view=|cx| view! { cx, <NotFound/> }/>
-            </Routes>
-        </main>
+            <main>
+                <Routes>
+                    <Route path="/" view=|cx| view! { cx, <Home/> }/>
+                    <Route path="/about" view=|cx| view! { cx, <About/> }/>
+                    <Route path="/*any" view=|cx| view! { cx, <NotFound/> }/>
+                </Routes>
+            </main>
         </Router>
     }
 }
