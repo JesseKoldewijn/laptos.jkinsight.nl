@@ -3,9 +3,13 @@
 @tailwind components;
 
 :root {
-	@apply bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-gray-300 to-gray-500 text-gray-700;
+    @apply bg-none;
+}
+
+.app-root {
+    @apply bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] from-gray-300 to-gray-500 text-gray-700;
 }
 
 .main-btn {
-	@apply font-semibold px-3 py-2 border-2 rounded-md bg-gray-300 border-gray-500 text-gray-700;
+    @apply font-semibold px-3 py-2 border-2 rounded-md bg-gray-900 border-gray-600 text-gray-300;
 }

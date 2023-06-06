@@ -8,6 +8,6 @@ pub fn Home(cx: Scope) -> impl IntoView {
         </span>
         <a href="/about" class="main-btn">
             "About"
-        </a>
+        </a>      
     </div> }
 }
