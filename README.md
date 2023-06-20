@@ -8,16 +8,24 @@
 ## Install
 
 ```sh
-cargo install trunk --locked
 rustup toolchain install nightly
 rustup default nightly
 rustup target add wasm32-unknown-unknown
+cargo install trunk --locked
 ```
 
 ## Usage
 
+### Development server
+
 ```sh
 trunk serve --open
+```
+
+### TailwindCSS
+
+```sh 
+pnpm run compile-css
 ```
 
 ## Author
