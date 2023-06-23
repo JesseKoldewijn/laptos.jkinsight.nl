@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+    app:
+        container_name: leptos.jkinsight.nl
+        image: leptos.jkinsight.nl
+        build:
+            context: .
+            dockerfile: Dockerfile
+        restart: always
+        ports:
+            - "80:80"
+            - "443:443"

@@ -6,7 +6,8 @@
     "scripts": {
         "dev": "trunk serve --open",
         "compile-css": "tailwindcss ./src/styles/globals-inject.css -c ./tailwind.config.cjs -o ./src/styles/globals.css --minify --watch",
-        "build": "tailwindcss -c ./tailwind.config.cjs -o ./src/styles/globals.css --minify && trunk build"
+        "build": "tailwindcss -c ./tailwind.config.cjs -o ./src/styles/globals.css --minify && trunk build",
+        "docker:build": "docker compose up --build"
     },
     "keywords": [
         "rust",
